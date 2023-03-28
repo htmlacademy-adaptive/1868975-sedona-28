@@ -1,7 +1,7 @@
 # Личный проект «Седона» 
 
 * Студент: [Алексей Лычагин](https://up.htmlacademy.ru/adaptive/28/user/1868975).
-* Наставник: `Неизвестно`.
+* Наставник: [Вадим Рахманов] (https://htmlacademy.ru/profile/flander).
 
 ---
 
