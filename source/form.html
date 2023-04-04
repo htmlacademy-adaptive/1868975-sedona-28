@@ -148,7 +148,7 @@
       </main>
 
       <footer class="page-footer">
-        <a class="page-footer__hashtag" href="#">#VISITSEDONA</a>
+        <a class="page-footer__contact" href="#">#VISITSEDONA</a>
 
         <ul class="page-footer__social list social">
           <li class="social__item">
@@ -177,7 +177,7 @@
           </li>
         </ul>
 
-        <div class="page-footer__developed-by">
+        <div class="page-footer__developed-by developed-by">
           <a class="developed-by__link" href="https://htmlacademy.ru/intensive/adaptive">Разработано
             <span class="visually-hidden">HTML Academy.</span>
           </a>
@@ -187,14 +187,16 @@
         </div>
       </footer>
 
-      <div class="modal modal-display">
-        <div class="modal__failure modal-display__failure">
+      <div class="modal-container modal-container--close">
+        <div class="modal modal--fail">
           <h2 class="modal__header">Что-то пошло не так!</h2>
           <p class="modal__text">Проверьте поля, выделенные красным, скорее всего вы забыли их заполнить</p>
           <a class="modal__button button" href="#">Ок</a>
         </div>
+      </div>
 
-        <div class="modal__success modal-display__success">
+      <div class="modal-container modal-container--close">
+        <div class="modal modal--success">
           <h2 class="modal__header modal__header--success">Ваш отзыв отправлен!</h2>
           <p class="modal__text modal__text--success">Спасибо за ваше участие, ваш отзыв уже поступил к нам. В ближайшее время мы опубликуем его на сайте.</p>
           <div class="modal__button-wrapper">
