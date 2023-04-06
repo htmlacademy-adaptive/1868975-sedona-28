@@ -1,0 +1,25 @@
+@import "./variables.scss";
+
+@mixin basic-font {
+  font-family: $font;
+  font-weight: $weight-basic;
+  font-size: 14px;
+  line-height: 21px;
+  text-transform: uppercase;
+}
+
+@mixin heading-font {
+  font-family: $font;
+  font-weight: $weight-bold;
+  font-size: 18px;
+  line-height: 26px;
+  text-transform: uppercase;
+}
+
+@mixin heading-big-font {
+  font-family: $font;
+  font-weight: $weight-bold;
+  font-size: 21px;
+  line-height: 26px;
+  text-transform: uppercase;
+}
