@@ -1,0 +1,17 @@
+@import "../global/variables.scss";
+
+.welcome-section {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background-image: url("../../img/background-sedona-picture.jpg");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-color: $color-text;
+}
+
+.welcome-section__logo {
+  margin-top: 90px;
+  width: 282px;
+}

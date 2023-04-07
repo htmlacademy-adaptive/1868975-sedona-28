@@ -1,0 +1,42 @@
+@import "../global/mixins.scss";
+@import "../global/variables.scss";
+
+
+.page-footer {
+  display: flex;
+  flex-direction: column;
+}
+
+.page-footer__contact {
+  @include heading-big-font;
+  text-align: center;
+  text-decoration: none;
+  margin: 0;
+  padding-top: 30px;
+  color: $color-black;
+
+  &:hover {
+    color: $color-accent;
+  }
+
+  &:active {
+    color: $color-grey-active;
+  }
+}
+
+
+.developed-by {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 0;
+  padding-top: 9px;
+  padding-bottom: 22px;
+}
+
+.developed-by__link {
+  @include basic-font;
+  text-decoration: none;
+  color: $color-black;
+  padding-right: 12px;
+}

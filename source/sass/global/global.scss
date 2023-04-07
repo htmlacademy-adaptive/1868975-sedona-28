@@ -17,13 +17,13 @@
   overflow: hidden;
 }
 
-.image {
+img {
+  display: block;
   width: 100%;
   height: auto;
-  margin: 0;
 }
 
-.picture {
+picture {
   line-height: 0;
 }
 

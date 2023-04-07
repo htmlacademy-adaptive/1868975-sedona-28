@@ -1,0 +1,15 @@
+@import "../global/variables.scss";
+
+.main-header {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  position: relative;
+}
+
+.main-header__logo {
+  position: absolute;
+  width: 185px;
+  z-index: 1;
+}
+
