@@ -1,3 +1,5 @@
+@import "../global/mixins.scss";
+@import "../global/variables.scss";
 
 .developed-by {
   display: flex;
@@ -24,6 +26,7 @@
     color: $color-grey-active;
   }
 }
+
 .developed-by__icon {
-  margin-left:  12px;
+  margin-left: 12px;
 }
