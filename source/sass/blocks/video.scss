@@ -1,0 +1,15 @@
+@import "../global/mixins.scss";
+@import "../global/variables.scss";
+
+.video__heading {
+  text-align: center;
+}
+
+.video__player {
+  text-align: center;
+}
+
+.video__player-splash-screen {
+  object-fit: cover;
+  margin-bottom: -67px;
+}

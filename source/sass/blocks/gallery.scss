@@ -1,0 +1,12 @@
+@import "../global/mixins.scss";
+@import "../global/variables.scss";
+
+.gallery__heading {
+  text-align: center;
+  border-bottom: solid 1px $color-separator-light;
+}
+
+.gallery__list {
+  display: flex;
+  flex-wrap: wrap;
+}

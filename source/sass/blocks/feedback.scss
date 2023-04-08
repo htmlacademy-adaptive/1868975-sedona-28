@@ -1,0 +1,205 @@
+@import "../global/mixins.scss";
+@import "../global/variables.scss";
+
+
+.feedback__article {
+  text-align: center;
+  border-bottom: solid 1px $color-separator-light;
+}
+
+.feedback__article-title {
+  @include heading-font;
+  margin: 0;
+  padding-top: 36px;
+}
+
+.feedback__article-text {
+  @include basic-font;
+  margin: 0;
+  padding-top: 24px;
+  padding-bottom: 28px;
+  color: $color-text;
+}
+
+.feedback__radio-list {
+  display: flex;
+  gap: 36px;
+  flex-direction: column;
+}
+
+.feedback__checkbox-list {
+  display: flex;
+  gap: 36px;
+  flex-direction: column;
+}
+
+.feedback__item {
+  display: flex;
+  flex-direction: column;
+  margin: 0;
+  padding: 0 20px;
+  border: none;
+
+  &--name {
+    padding-bottom: 41px;
+    gap: 16px;
+    border-bottom: solid 1px $color-separator-light;
+  }
+
+  &--contacts {
+    position: relative;
+    padding-bottom: 16px;
+    border-bottom: solid 1px $color-separator-light;
+  }
+
+  &--impression,
+  &--sight {
+    position: relative;
+    border-bottom: solid 1px $color-separator-light;
+    padding-bottom: 16px;
+  }
+
+  &--impression {
+    padding-bottom: 33px;
+  }
+
+  &--submit {
+    display: flex;
+    gap: 0;
+    padding-top: 52px;
+    padding-bottom: 19px;
+  }
+}
+
+
+.feedback__legend {
+  @include heading-font;
+  margin: 0 auto;
+  text-align: center;
+  padding-top: 24px;
+  padding-bottom: 19px;
+
+  &--impression {
+    padding-bottom: 30px;
+  }
+
+  &--sight {
+    padding-top: 25px;
+    padding-bottom: 31px;
+  }
+}
+
+
+.feedback__field {
+  &--name {
+    @include basic-font;
+    display: flex;
+    flex-direction: column;
+    color: $color-text;
+    padding-left: 16px;
+  }
+
+  &--contacts {
+    @include basic-font;
+    display: flex;
+    position: relative;
+    flex-direction: column;
+    color: $color-text;
+    padding-left: 16px;
+  }
+
+  &--contacts-mail {
+    padding-top: 17px;
+    padding-bottom: 19px;
+  }
+
+  &--impression,
+  &--sight {
+    @include heading-font;
+    text-transform: none;
+    padding: 0;
+  }
+}
+
+.feedback__input {
+  transition: 100ms all ease;
+
+  &--name {
+    @include heading-font;
+    display: block;
+    text-transform: none;
+    background-color: $color-page-background;
+    border: none;
+    margin: 0;
+    padding: 16px;
+    margin-left: -16px;
+
+    &::placeholder {
+      color: rgba(0, 0, 0, 0.3);
+      opacity: 1;
+    }
+  }
+
+  &--contacts {
+    @include heading-font;
+    display: block;
+    text-transform: none;
+    background-color: $color-page-background;
+    border: none;
+    margin: 0 0 0 -16px;
+    padding: 16px;
+    padding-right: 0;
+    border-right: 58px solid $color-grey;
+
+    &::placeholder {
+      color: rgba(0, 0, 0, 0.3);
+      opacity: 1;
+    }
+  }
+
+  &:hover {
+    background-color: $color-separator-light;
+  }
+
+  &:focus {
+    background-color: $color-white;
+    box-shadow: inset 0 0 0 4px $color-separator-light;
+    outline: none;
+  }
+
+  &:active {
+    background-color: $color-white;
+    box-shadow: inset 0 0 0 4px $color-separator-light;
+  }
+}
+
+.feedback__submit-button {
+  @include heading-big-font;
+  padding: 16px 0;
+}
+
+.feedback__note {
+  @include basic-font;
+  font-size: 12px;
+  text-align: right;
+  padding-top: 2px;
+  color: rgba(51, 51, 51, 0.6);
+}
+
+.feedback__phone-icon {
+  display: block;
+  width: 18px;
+  height: 18px;
+  position: absolute;
+  right: 20px;
+  bottom: 20px;
+}
+
+.feedback__mail-icon {
+  display: block;
+  width: 17px;
+  height: 17px;
+  position: absolute;
+  right: 20px;
+  bottom: 40px;
+}

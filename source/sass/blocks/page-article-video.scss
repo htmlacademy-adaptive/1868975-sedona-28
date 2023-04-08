@@ -1,0 +1,33 @@
+@import "../global/mixins.scss";
+@import "../global/variables.scss";
+
+.page-article-video__title {
+  @include heading-font;
+  margin: 0;
+  padding-top: 17px;
+  text-align: center
+}
+
+.page-article-video__text {
+  @include basic-font;
+  margin: 0;
+  padding-top: 26px;
+  padding-bottom: 40px;
+  text-align: center;
+}
+.video__play-button {
+  position: relative;
+  top: -56px;
+  left: 136px;
+  background: transparent;
+  box-sizing: border-box;
+  border-color: transparent transparent transparent rgba(255, 255, 255, 0.7);
+  border-style: solid;
+  border-width: 26px 0 26px 47px;
+  transition: 100ms all ease;
+  cursor: pointer;
+
+  &:hover {
+    border-color: transparent transparent transparent rgba(255, 255, 255, 0.5);
+  }
+}

@@ -1,0 +1,23 @@
+@import "../global/mixins.scss";
+@import "../global/variables.scss";
+
+.textarea {
+  margin: 0 auto;
+}
+
+.textarea__input {
+  @include heading-font;
+  border: none;
+  outline: none;
+  text-transform: none;
+  resize: none;
+  background-color: $color-page-background;
+  padding: 16px;
+  min-width: 247px;
+  min-height: 118px;
+
+  &::placeholder {
+    color: rgba(0, 0, 0, 0.3);
+    opacity: 1;
+  }
+}

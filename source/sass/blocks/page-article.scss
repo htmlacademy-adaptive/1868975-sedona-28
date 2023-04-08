@@ -1,0 +1,18 @@
+@import "../global/mixins.scss";
+@import "../global/variables.scss";
+
+.page-article__title {
+  @include heading-font;
+  margin: 0;
+  padding-top: 38px;
+}
+
+.page-article__text {
+  @include basic-font;
+  color: $color-text;
+  margin: 0;
+  padding-top: 24px;
+  padding-bottom: 37px;
+}
+
+
