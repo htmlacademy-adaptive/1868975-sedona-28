@@ -1,0 +1,23 @@
+@import "../global/mixins.scss";
+@import "../global/variables.scss";
+
+.button {
+  color: $color-white;
+  background-color: $color-accent;
+  text-decoration: none;
+  border: none;
+  cursor: pointer;
+
+  &:hover {
+    background-color: $color-eccent-hover;
+  }
+
+  &:active {
+    background-color: $color-eccent-active;
+    color: rgba(255, 255, 255, 0.3);
+  }
+
+  &:disabled {
+    background-color: $color-separator-light;
+  }
+}

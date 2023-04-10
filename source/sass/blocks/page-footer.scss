@@ -1,0 +1,25 @@
+@import "../global/mixins.scss";
+@import "../global/variables.scss";
+
+
+.page-footer {
+  display: flex;
+  flex-direction: column;
+}
+
+.page-footer__contact {
+  @include heading-big-font;
+  text-align: center;
+  text-decoration: none;
+  margin: 0;
+  padding-top: 30px;
+  color: $color-black;
+
+  &:hover {
+    color: $color-accent;
+  }
+
+  &:active {
+    color: $color-grey-active;
+  }
+}

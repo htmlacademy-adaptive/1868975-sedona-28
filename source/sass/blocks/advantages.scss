@@ -1,0 +1,52 @@
+@import "../global/mixins.scss";
+@import "../global/variables.scss";
+
+
+.advantages__title {
+  @include heading-font;
+  color: $color-black;
+  text-align: center;
+  margin: 0;
+  padding-top: 24px;
+
+  &--real-city,
+  &--bridge {
+    color: $color-white;
+  }
+}
+
+.advantages__number {
+  @include basic-font;
+  text-align: center;
+  margin: 0;
+  padding-top: 10px;
+  padding-bottom: 16px;
+  color: $color-text;
+
+  &--real-city,
+  &--bridge {
+    color: $color-white;
+  }
+}
+
+.advantages__description {
+  @include basic-font;
+  text-align: center;
+  margin: 0;
+  padding-bottom: 40px;
+  color: $color-text;
+
+  &--real-city,
+  &--bridge {
+    color: $color-white;
+  }
+}
+
+.advantages__item {
+  background-color: $color-secondary;
+}
+
+.advantages__item--with-photo {
+  background-color: $color-accent;
+  color: $color-white;
+}

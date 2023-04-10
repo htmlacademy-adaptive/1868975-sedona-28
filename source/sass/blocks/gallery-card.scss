@@ -1,0 +1,57 @@
+@import "../global/mixins.scss";
+@import "../global/variables.scss";
+
+.gallery-card {
+  display: flex;
+  flex-direction: column;
+  padding: 23px 20px;
+  border-bottom: solid 1px $color-separator-light;
+}
+
+.gallery-card__name {
+  @include basic-font;
+  font-weight: 700;
+  margin: 0;
+  padding-top: 14px;
+}
+
+.gallery-card__author {
+  @include basic-font;
+  text-transform: none;
+  margin: 0;
+  padding-top: 3px;
+}
+
+.gallery-card__likes {
+  @include basic-font;
+  display: flex;
+  gap: 2px;
+  padding-top: 16px;
+  font-weight: 700;
+}
+
+.gallery-card__likes-button {
+  position: relative;
+  bottom: 5px;
+  right: 5px;
+  border: none;
+  background-color: transparent;
+  cursor: pointer;
+}
+
+.gallery-card__like-icon {
+  display: block;
+  width: 23px;
+  height: 21px;
+  fill: $color-black;
+  opacity: 0.3;
+  transition: 100ms all ease;
+
+  &:hover {
+    opacity: 0.2;
+  }
+
+  &:active {
+    opacity: 0.1;
+  }
+}

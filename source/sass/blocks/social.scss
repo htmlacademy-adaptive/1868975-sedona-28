@@ -1,0 +1,39 @@
+@import "../global/mixins.scss";
+@import "../global/variables.scss";
+
+.social {
+  display: grid;
+  grid-template-columns: repeat(3, 48px);
+  grid-template-rows: auto;
+  justify-content: center;
+  gap: 6px;
+  margin-top: 35px;
+  margin-bottom: 30px;
+}
+
+
+.social__item {
+  display: block;
+  width: 48px;
+  height: 48px;
+  fill: $color-white;
+  background-color: $color-accent;
+
+  &:hover {
+    background-color: $color-eccent-hover;
+  }
+
+  &:active {
+    background-color: $color-eccent-active;
+    fill: rgba(255, 255, 255, 0.3);
+  }
+}
+
+.social__link {
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  height: 100%;
+}

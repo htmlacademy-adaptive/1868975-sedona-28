@@ -1,0 +1,34 @@
+@import "../global/variables.scss";
+
+.welcome-section {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background-image: url("../../img/background-sedona-picture.jpg");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-color: $color-text;
+
+  &--catalog,
+  &--form {
+    padding-top: 52px;
+    padding-bottom: 67px;
+  }
+}
+
+.welcome-section__logo {
+  margin-top: 90px;
+  width: 282px;
+}
+
+.sedona-logo {
+  width: 229px;
+}
+
+.welcome-section__catalog-triangle,
+.welcome-section__form-triangle {
+  position: absolute;
+  fill: $color-white;
+  top: 157px;
+}

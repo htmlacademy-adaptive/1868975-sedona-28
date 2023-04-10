@@ -1,0 +1,17 @@
+@import "../global/mixins.scss";
+@import "../global/variables.scss";
+
+.description__title {
+  @include heading-font;
+  color: $color-black;
+  text-align: center;
+  margin-top: 32px;
+}
+
+.description__text {
+  @include basic-font;
+  text-align: center;
+  color: $color-text;
+  margin-top: 35px;
+  margin-bottom: 32px;
+}

@@ -1,0 +1,30 @@
+@import "../global/mixins.scss";
+@import "../global/variables.scss";
+
+.hotel-search__header {
+  @include heading-big-font;
+  text-align: center;
+  margin: 0;
+  padding-top: 40px;
+}
+
+.hotel-search__text {
+  @include basic-font;
+  text-align: center;
+  margin: 0;
+  padding-bottom: 34px;
+  padding-top: 20px;
+}
+
+.hotel-search__button {
+  @include heading-big-font;
+  display: flex;
+  justify-content: center;
+  padding: 16px 49px;
+  margin: 0 18px;
+  margin-bottom: 49px;
+}
+
+.hotel-search__map-wrapper {
+  display: block;
+}

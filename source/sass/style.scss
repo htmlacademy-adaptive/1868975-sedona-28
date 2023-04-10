@@ -1,1 +1,32 @@
-// Начните писать стили здесь
+// general
+@import "global/variables";
+@import "global/global";
+@import "global/mixins";
+@import "global/fonts";
+
+// blocks
+@import "./blocks/page.scss";
+@import "./blocks/button.scss";
+@import "./blocks/main-container.scss";
+@import "./blocks/welcome-section.scss";
+@import "./blocks/sedona-logo.scss";
+@import "./blocks/page-article.scss";
+@import "./blocks/page-article-video.scss";
+@import "./blocks/main-header.scss";
+@import "./blocks/main-nav.scss";
+@import "./blocks/description.scss";
+@import "./blocks/advantages.scss";
+@import "./blocks/sublist.scss";
+@import "./blocks/hotel-search.scss";
+@import "./blocks/page-footer.scss";
+@import "./blocks/developed-by.scss";
+@import "./blocks/textarea.scss";
+@import "./blocks/gallery.scss";
+@import "./blocks/gallery-card.scss";
+@import "./blocks/video.scss";
+@import "./blocks/feedback.scss";
+@import "./blocks/modal.scss";
+@import "./blocks/modal-container.scss";
+@import "./blocks/social.scss";
+@import "./blocks/radio-button.scss";
+@import "./blocks/checkbox.scss";
