@@ -1,12 +1,41 @@
-@import "../global/mixins.scss";
-@import "../global/variables.scss";
-
 .gallery__heading {
   text-align: center;
   border-bottom: solid 1px $color-separator-light;
+
+  @media (min-width: $tablet-width) {
+    border-bottom: none;
+  }
 }
 
 .gallery__list {
   display: flex;
   flex-wrap: wrap;
+
+  @media (min-width: $tablet-width) {
+    padding-left: 60px;
+  }
+
+  @media (min-width: $desktop-width) {
+    padding: 0;
+  }
+}
+
+.gallery__item {
+  @media (min-width: $tablet-width) {
+    display: flex;
+
+    &:nth-child(3) {
+      .gallery-card__description {
+        background-color: $color-gallery;
+      }
+    }
+  }
+
+  @media (min-width: $desktop-width) {
+    &:nth-child(3) {
+      .gallery-card__description {
+        background-color: rgba(0, 0, 0, 0.3);
+      }
+    }
+  }
 }

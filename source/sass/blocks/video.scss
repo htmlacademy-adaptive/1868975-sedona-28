@@ -1,5 +1,14 @@
-@import "../global/mixins.scss";
-@import "../global/variables.scss";
+.video {
+  margin-bottom: -4px;
+
+  @media (min-width: $tablet-width) {
+    margin-bottom: -14px;
+  }
+
+  @media (min-width: $desktop-width) {
+    margin-bottom: 30px;
+  }
+}
 
 .video__heading {
   text-align: center;
@@ -10,6 +19,49 @@
 }
 
 .video__player-splash-screen {
+  width: 280px;
   object-fit: cover;
-  margin-bottom: -67px;
+  margin: 0 auto;
+  margin-bottom: -58px;
+
+  @media (min-width: $tablet-width) {
+    width: 648px;
+    height: 500px;
+    margin-bottom: -16px;
+    margin: 0 auto;
+  }
+
+  @media (min-width: $desktop-width) {
+    width: 800px;
+    height: 500px;
+    margin-bottom: 31px;
+    margin: 0 auto;
+  }
+}
+
+.video__play-button {
+  position: relative;
+  top: -56px;
+  left: 136px;
+  background: transparent;
+  box-sizing: border-box;
+  border-color: transparent transparent transparent rgba(255, 255, 255, 0.7);
+  border-style: solid;
+  border-width: 26px 0 26px 47px;
+  transition: 100ms all ease;
+  cursor: pointer;
+
+  &:hover {
+    border-color: transparent transparent transparent rgba(255, 255, 255, 0.5);
+  }
+
+  @media (min-width: $tablet-width) {
+    top: -277px;
+    left: 360px;
+  }
+
+  @media (min-width: $desktop-width) {
+    top: -277px;
+    left: 575px;
+  }
 }

@@ -1,25 +1,44 @@
-@import "../global/mixins.scss";
-@import "../global/variables.scss";
-
-
 .sublist {
   background-color: $color-white;
   color: $color-black;
+  margin: 0;
   padding-top: 10px;
-  padding-bottom: 46px;
+  padding-bottom: 12px;
   padding-right: 18px;
+
+  @media (min-width: $tablet-width) {
+    display: flex;
+    width: 100%;
+    padding: 0;
+  }
 }
 
 
 .sublist__item {
+  position: relative;
+  margin-bottom: 33px;
+
   &--gifts {
-    padding-left: 4px;
-    margin-top: -21px;
+    margin-top: 0px;
   }
 
+
   &--food {
-    margin-top: -17px;
-    padding: 25px 0;
+    @media (min-width: $tablet-width) {
+      padding: 0;
+    }
+  }
+
+  @media (min-width: $tablet-width) {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    width: 256px;
+    margin-bottom: 0px;
+  }
+
+  @media (min-width: $desktop-width) {
+    width: 400px;
   }
 }
 
@@ -27,45 +46,168 @@
   @include heading-font;
   display: flex;
   align-items: flex-end;
-  margin-left: 18px;
+  margin-left: 65px;
+  margin-bottom: 16px;
+
+  @media (min-width: $tablet-width) {
+    flex-direction: column;
+    align-items: center;
+  }
 
   &--accomodation {
-    gap: 9px;
-    margin-top: 11px;
-    margin-bottom: 15px;
+    margin-top: 21px;
+
+
+    @media (min-width: $tablet-width) {
+      gap: 26px;
+      padding-top: 158px;
+    }
+
+    @media (min-width: $desktop-width) {
+      padding-top: 170px;
+    }
 
     &::before {
-      content: url("../../img/home-icon.svg");
+      position: absolute;
+      content: "";
+      background-image: url("../../img/home-icon.svg");
+      background-repeat: no-repeat;
+      top:-7px;
+      left: 18px;
       width: 39px;
       height: 37px;
+
+
+      @media (min-width: $tablet-width) {
+        top:59px;
+        left: 88px;
+        background-size: 77px auto;
+        width: 77px;
+        height: 72px;
+      }
+
+      @media (min-width: $desktop-width) {
+        top: 69px;
+        left: 160px;
+        background-image: url("../../img/home-icon--tablet.svg");
+        background-size: 80px auto;
+        width: 80px;
+        height: 73px;
+      }
     }
   }
 
   &--food {
-    gap: 8px;
-    margin-bottom: 14px;
+    margin-bottom: 16px;
+
+    @media (min-width: $tablet-width) {
+      gap: 24px;
+      padding-top: 157px;
+    }
+
+    @media (min-width: $desktop-width) {
+      padding-top: 168px;
+    }
 
     &::before {
-      content: url("../../img/food-icon.svg");
-      width: 40px;
-      height: 35px;
+      position: absolute;
+      content: "";
+      background-image: url("../../img/food-icon.svg");
+      background-repeat: no-repeat;
+      top:-7px;
+      left: 18px;
+      width: 39px;
+      height: 37px;
+
+
+      @media (min-width: $tablet-width) {
+        top: 59px;
+        left: 87px;
+        background-size: 80px auto;
+        width: 80px;
+        height: 72px;
+      }
+
+      @media (min-width: $desktop-width) {
+        top: 72px;
+        left: 162px;
+        background-image: url("../../img/food-icon--desktop.svg");
+        background-size: 73px 69px;
+        width: 73px;
+        height: 69px;
+      }
     }
   }
 
   &--gifts {
-    gap: 11px;
-    margin-bottom: 15px;
+    margin-bottom: 16px;
+
+    @media (min-width: $tablet-width) {
+      gap: 20px;
+      padding-top: 154px;
+    }
+
+    @media (min-width: $desktop-width) {
+      gap: 30px;
+      padding-top: 172px;
+    }
 
     &::before {
-      content: url("../../img/gift-icon.svg");
-      width: 32px;
-      height: 38px;
+      position: absolute;
+      content: "";
+      background-image: url("../../img/gift-icon.svg");
+      background-repeat: no-repeat;
+      top:-7px;
+      left: 21px;
+      width: 39px;
+      height: 37px;
+
+      @media (min-width: $tablet-width) {
+        top: 64px;
+        left: 97px;
+        background-size: 67px 75px;
+        width: 67px;
+        height: 75px;
+
+      }
+
+      @media (min-width: $desktop-width) {
+        top: 69px;
+        left: 159px;
+        background-image: url("../../img/gift-icon--desktop.svg");
+        background-size: 78px auto;
+        height: 76px;
+        width: 78px;
+
+
+      }
     }
+  }
+
+  @media (min-width: $tablet-width) {
+    font-size: 21px;
+    margin: 0;
   }
 }
 
 .sublist__item-description {
   @include basic-font;
-  padding-left: 65px;
+  padding-left: 66px;
   color: $color-text;
+  margin: 0;
+
+
+
+  @media (min-width: $tablet-width) {
+    padding: 0;
+    margin: 0 auto;
+    margin-top: 22px;
+    margin-bottom: 61px;
+    width: 190px;
+  }
+
+  @media (min-width: $desktop-width) {
+    width: 300px;
+    margin-bottom: 69px;
+  }
 }

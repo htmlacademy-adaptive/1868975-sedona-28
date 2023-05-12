@@ -1,5 +1,3 @@
-@import "../global/variables.scss";
-
 .main-header {
   display: flex;
   flex-direction: column;
@@ -10,5 +8,9 @@
 .main-header__logo {
   position: absolute;
   width: 185px;
-  z-index: 1;
+  z-index: 4;
+
+  @media (min-width: $tablet-width) {
+    z-index: 6;
+  }
 }

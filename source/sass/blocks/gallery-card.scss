@@ -1,25 +1,86 @@
-@import "../global/mixins.scss";
-@import "../global/variables.scss";
-
 .gallery-card {
   display: flex;
   flex-direction: column;
   padding: 23px 20px;
   border-bottom: solid 1px $color-separator-light;
+
+  @media (min-width: $tablet-width) {
+    padding: 0;
+    border-bottom: none;
+  }
+
+  @media (min-width: $desktop-width) {
+    padding: 0;
+  }
+}
+
+.gallery-card img {
+  display: block;
+}
+
+.gallery-card__description {
+  @media (min-width: $tablet-width) {
+    display: flex;
+    justify-content: space-between;
+    background-color: $color-page-background;
+  }
+
+  @media (min-width: $desktop-width) {
+    background-color: rgba(0, 0, 0, 0.3);
+    margin-top: -79px;
+  }
 }
 
 .gallery-card__name {
   @include basic-font;
   font-weight: 700;
   margin: 0;
-  padding-top: 14px;
+  padding-top: 16px;
+
+  @media (min-width: $tablet-width) {
+    padding-top: 22px;
+    padding-left: 20px;
+  }
+
+  @media (min-width: $desktop-width) {
+    color: $color-white;
+    padding-top: 17px;
+    padding-left: 26px;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .gallery-card__name--large {
+    padding-top: 22px;
+    padding-left: 21px
+  }
 }
 
 .gallery-card__author {
   @include basic-font;
   text-transform: none;
   margin: 0;
-  padding-top: 3px;
+  padding-top: 1px;
+
+  @media (min-width: $tablet-width) {
+    padding-left: 20px;
+    padding-bottom: 15px;
+  }
+
+  @media (min-width: $desktop-width) {
+    color: $color-white;
+    padding-top: 4px;
+    padding-bottom: 16px;
+    padding-left: 26px;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .gallery-card__author--large {
+    padding-top: 1px;
+    padding-bottom: 15px;
+    padding-left: 21px
+  }
 }
 
 .gallery-card__likes {
@@ -28,6 +89,18 @@
   gap: 2px;
   padding-top: 16px;
   font-weight: 700;
+
+  @media (min-width: $tablet-width) {
+    padding: 0;
+    padding-right: 20px;
+    padding-top: 4px;
+    align-items: center;
+  }
+
+  @media (min-width: $desktop-width) {
+    color: $color-white;
+    gap: 0;
+  }
 }
 
 .gallery-card__likes-button {
@@ -37,6 +110,15 @@
   border: none;
   background-color: transparent;
   cursor: pointer;
+
+  @media (min-width: $tablet-width) {
+    right: 1px;
+    bottom: 4px;
+  }
+
+  @media (min-width: $desktop-width) {
+    right: 4px;
+  }
 }
 
 .gallery-card__like-icon {
@@ -53,5 +135,18 @@
 
   &:active {
     opacity: 0.1;
+  }
+
+  @media (min-width: $desktop-width) {
+    fill: $color-white;
+    opacity: 1;
+
+    &:hover {
+      opacity: 0.7;
+    }
+
+    &:active {
+      opacity: 0.5;
+    }
   }
 }
