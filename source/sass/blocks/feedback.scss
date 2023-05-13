@@ -400,7 +400,6 @@
   }
 }
 
-
 .feedback__field {
   &--name {
     @include basic-font;
@@ -474,7 +473,7 @@
     }
 
     &--sight-kolokol {
-      padding-left: 0px;
+      padding-left: 0;
     }
 
     &--sight-slidepark {
@@ -482,7 +481,7 @@
     }
 
     &--sight-rocks {
-      padding-left: 0px;
+      padding-left: 0;
     }
   }
 

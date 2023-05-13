@@ -47,13 +47,11 @@
 .welcome-section__logo {
   width: 282px;
 
-  @media (min-width: $tablet-width)  {
-      width: 461px;
-      height: 350px;
+  @media (min-width: $tablet-width) {
+    width: 461px;
+    height: 350px;
   }
 }
-
-
 
 .welcome-section__index-triangle {
   position: absolute;

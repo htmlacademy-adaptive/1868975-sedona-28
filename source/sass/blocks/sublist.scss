@@ -13,15 +13,13 @@
   }
 }
 
-
 .sublist__item {
   position: relative;
   margin-bottom: 33px;
 
   &--gifts {
-    margin-top: 0px;
+    margin-top: 0;
   }
-
 
   &--food {
     @media (min-width: $tablet-width) {
@@ -34,7 +32,7 @@
     flex-direction: column;
     text-align: center;
     width: 256px;
-    margin-bottom: 0px;
+    margin-bottom: 0;
   }
 
   @media (min-width: $desktop-width) {
@@ -57,7 +55,6 @@
   &--accomodation {
     margin-top: 21px;
 
-
     @media (min-width: $tablet-width) {
       gap: 26px;
       padding-top: 158px;
@@ -72,14 +69,13 @@
       content: "";
       background-image: url("../../img/home-icon.svg");
       background-repeat: no-repeat;
-      top:-7px;
+      top: -7px;
       left: 18px;
       width: 39px;
       height: 37px;
 
-
       @media (min-width: $tablet-width) {
-        top:59px;
+        top: 59px;
         left: 88px;
         background-size: 77px auto;
         width: 77px;
@@ -114,11 +110,10 @@
       content: "";
       background-image: url("../../img/food-icon.svg");
       background-repeat: no-repeat;
-      top:-7px;
+      top: -7px;
       left: 18px;
       width: 39px;
       height: 37px;
-
 
       @media (min-width: $tablet-width) {
         top: 59px;
@@ -157,7 +152,7 @@
       content: "";
       background-image: url("../../img/gift-icon.svg");
       background-repeat: no-repeat;
-      top:-7px;
+      top: -7px;
       left: 21px;
       width: 39px;
       height: 37px;
@@ -168,7 +163,6 @@
         background-size: 67px 75px;
         width: 67px;
         height: 75px;
-
       }
 
       @media (min-width: $desktop-width) {
@@ -178,8 +172,6 @@
         background-size: 78px auto;
         height: 76px;
         width: 78px;
-
-
       }
     }
   }
@@ -195,8 +187,6 @@
   padding-left: 66px;
   color: $color-text;
   margin: 0;
-
-
 
   @media (min-width: $tablet-width) {
     padding: 0;

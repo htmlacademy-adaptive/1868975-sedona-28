@@ -12,7 +12,6 @@
   left: 0;
 }
 
-
 .main-nav--closed {
   @media (max-width: 767px) {
     display: none;
@@ -85,7 +84,6 @@
   background-color: $color-accent;
   mix-blend-mode: normal;
 
-
   @media (min-width: $tablet-width) {
     display: flex;
     flex-wrap: wrap;
@@ -157,8 +155,8 @@
   &--catalog {
     margin-top: 1px;
     border-top: solid 1px #8fc2de;
-    box-shadow: 0px 1px 0px rgba(1, 1, 1, 0.2),
-      inset 0px 1px 0px rgba(255, 255, 255, 0.2);
+    box-shadow: 0 1px 0 rgba(1, 1, 1, 0.2),
+      inset 0 1px 0 rgba(255, 255, 255, 0.2);
 
     @media (min-width: $tablet-width) {
       margin-right: 153px;
@@ -170,22 +168,22 @@
   }
 
   &--index {
-    box-shadow: 0px 1px 0px rgba(1, 1, 1, 0.2),
-      inset 0px 1px 0px rgba(255, 255, 255, 0.2);
+    box-shadow: 0 1px 0 rgba(1, 1, 1, 0.2),
+      inset 0 1px 0 rgba(255, 255, 255, 0.2);
   }
 
   &--form {
     margin-top: 1px;
     border-top: solid 1px #8fc2de;
-    box-shadow: 0px 1px 0px rgba(1, 1, 1, 0.2),
-      inset 0px 1px 0px rgba(255, 255, 255, 0.2);
+    box-shadow: 0 1px 0 rgba(1, 1, 1, 0.2),
+      inset 0 1px 0 rgba(255, 255, 255, 0.2);
   }
 
   &--academy {
     margin-top: 1px;
     border-top: solid 1px #8fc2de;
-    box-shadow: 0px 1px 0px rgba(1, 1, 1, 0.2),
-      inset 0px 1px 0px rgba(255, 255, 255, 0.2);
+    box-shadow: 0 1px 0 rgba(1, 1, 1, 0.2),
+      inset 0 1px 0 rgba(255, 255, 255, 0.2);
   }
 
   &--index,
