@@ -1,13 +1,9 @@
-@import "../global/mixins.scss";
-@import "../global/variables.scss";
-
 .developed-by {
   display: flex;
   justify-content: center;
   align-items: center;
   margin: 0;
-  padding-top: 9px;
-  padding-bottom: 22px;
+  padding-top: 0;
 }
 
 .developed-by__link {
@@ -25,8 +21,12 @@
   &:active {
     color: $color-grey-active;
   }
+
+  @media (min-width: $desktop-width) {
+    padding-top: 3px;
+  }
 }
 
 .developed-by__icon {
-  margin-left: 12px;
+  margin-left: 13px;
 }

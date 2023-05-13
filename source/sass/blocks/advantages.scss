@@ -1,17 +1,131 @@
-@import "../global/mixins.scss";
-@import "../global/variables.scss";
+.advantages__list {
+  @media (min-width: $tablet-width) {
+    display: flex;
+    flex-wrap: wrap;
+  }
+}
 
+.advantages__item {
+  display: flex;
+  flex-direction: column;
+
+  &--space,
+  &--road,
+  &--tourists {
+    background-color: $color-secondary;
+  }
+
+  @media (min-width: $tablet-width) {
+    flex-direction: row;
+    flex-wrap: wrap;
+    width: 256px;
+  }
+
+  @media (min-width: $desktop-width) {
+    flex-direction: row;
+    flex-wrap: wrap;
+    width: 400px;
+  }
+}
 
 .advantages__title {
   @include heading-font;
-  color: $color-black;
   text-align: center;
   margin: 0;
-  padding-top: 24px;
+  padding-top: 25px;
 
-  &--real-city,
+  &--real-city {
+    @include heading-font;
+    text-align: center;
+    margin: 0;
+    padding-top: 55px;
+
+    @media (min-width: $tablet-width) {
+      padding-top: 53px;
+    }
+
+    @media (min-width: $desktop-width) {
+      padding-top: 54px;
+    }
+  }
+
   &--bridge {
-    color: $color-white;
+    @include heading-font;
+    text-align: center;
+    margin: 0;
+    padding-top: 37px;
+
+    @media (min-width: $tablet-width) {
+      padding-top: 54px;
+    }
+
+    @media (min-width: $desktop-width) {
+      padding-top: 52px;
+    }
+  }
+
+  @media (min-width: $tablet-width) {
+    width: 180px;
+    text-align: center;
+    margin: 0 auto;
+    font-size: 21px;
+
+    &--space,
+    &--tourists {
+      padding-top: 43px;
+    }
+
+    &--road {
+      padding-top: 43px;
+    }
+  }
+
+  @media (min-width: $desktop-width) {
+    &--road {
+      padding-top: 53px;
+    }
+
+    &--space,
+    &--tourists {
+      padding-top: 53px;
+    }
+  }
+}
+
+.advantages__wrapper {
+  margin: 0 auto;
+}
+
+.advantages__sedona-city-photo {
+  display: block;
+  object-fit: cover;
+  width: 320px;
+  height: 260px;
+
+  @media (min-width: $tablet-width) {
+    width: 512px;
+    height: 256px;
+  }
+
+  @media (min-width: $desktop-width) {
+    width: 800px;
+  }
+}
+
+.advantages__sedona-bridge-photo {
+  display: block;
+  object-fit: cover;
+  width: 320px;
+  height: 260px;
+
+  @media (min-width: $tablet-width) {
+    width: 512px;
+    height: 256px;
+  }
+
+  @media (min-width: $desktop-width) {
+    width: 800px;
+    object-position: 50% -14px;
   }
 }
 
@@ -20,12 +134,38 @@
   text-align: center;
   margin: 0;
   padding-top: 10px;
-  padding-bottom: 16px;
+  padding-bottom: 18px;
   color: $color-text;
 
   &--real-city,
   &--bridge {
     color: $color-white;
+  }
+
+  &--real-city {
+    @media (min-width: $tablet-width) {
+      padding-bottom: 24px;
+    }
+  }
+
+  &--bridge {
+    padding-bottom: 19px;
+
+    @media (min-width: $tablet-width) {
+      padding-bottom: 24px;
+    }
+
+    @media (min-width: $desktop-width) {
+      padding-top: 12px;
+    }
+  }
+
+  &--space,
+  &--road,
+  &--tourists {
+    @media (min-width: $tablet-width) {
+      padding-bottom: 25px;
+    }
   }
 }
 
@@ -35,18 +175,81 @@
   margin: 0;
   padding-bottom: 40px;
   color: $color-text;
+  width: 238px;
+
+  &--tourists {
+    padding-bottom: 28px;
+    width: 325px;
+  }
+
+  &--space,
+  &--road {
+    position: relative;
+    padding-bottom: 25px;
+  }
+
+  &--space::after,
+  &--road::after {
+    position: absolute;
+    height: 1px;
+    width: 284px;
+    background: $color-separator-dark;
+    margin: 0 auto;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    content: "";
+  }
 
   &--real-city,
   &--bridge {
     color: $color-white;
   }
-}
 
-.advantages__item {
-  background-color: $color-secondary;
+  &--real-city {
+    width: 284px;
+  }
+
+  &--bridge {
+    padding-bottom: 36px;
+    width: 284px;
+  }
+
+  @media (min-width: $tablet-width) {
+    width: 190px;
+    margin: 0 auto;
+    padding: 0;
+
+    &--space::after,
+    &--road::after {
+      display: none;
+    }
+
+    &--space,
+    &--road,
+    &--tourists {
+      padding-bottom: 42px;
+    }
+  }
+
+  @media (min-width: $desktop-width) {
+    width: 300px;
+    padding-bottom: 52px;
+  }
 }
 
 .advantages__item--with-photo {
   background-color: $color-accent;
   color: $color-white;
+
+  @media (min-width: $tablet-width) {
+    display: flex;
+    width: 100%;
+  }
+}
+
+.advantages__item--with-bridge-photo {
+  @media (min-width: $tablet-width) {
+    flex-direction: row-reverse;
+  }
 }

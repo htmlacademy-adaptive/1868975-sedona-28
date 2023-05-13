@@ -1,6 +1,3 @@
-@import "../global/mixins.scss";
-@import "../global/variables.scss";
-
 .modal {
   display: flex;
   flex-direction: column;
@@ -14,6 +11,14 @@
   margin-right: auto;
   margin-bottom: auto;
   background-color: $color-white;
+
+  @media (min-width: $tablet-width) {
+    max-width: 768px;
+  }
+
+  @media (min-width: $desktop-width) {
+    max-width: 1200px;
+  }
 }
 
 .modal__header {
@@ -25,6 +30,19 @@
   &--success {
     padding-top: 40px;
   }
+
+  @media (min-width: $tablet-width) {
+    font-size: 30px;
+    line-height: 40px;
+    padding-top: 48px;
+    width: 211px;
+    margin: 0 auto;
+
+    &--success {
+      padding-top: 44px;
+      width: 444px;
+    }
+  }
 }
 
 .modal__text {
@@ -33,18 +51,38 @@
   color: $color-text;
   width: 237px;
   margin: 0 auto;
-  padding-top: 30px;
+  padding-top: 25px;
+
+  @media (min-width: $tablet-width) {
+    padding-top: 23px;
+    width: 307px;
+
+    &--success {
+      width: 444px;
+    }
+  }
 }
 
 .modal__button {
   @include heading-font;
   text-align: center;
-  padding: 18px 63px;
-  margin: 30px 70px 35px;
+  padding: 18px 78px 14px;
+  margin: 28px 70px 35px;
 
   &--success {
     margin: 20px 20px;
-    padding: 18px 61px;
+    padding: 18px 76px 14px;
+  }
+
+  @media (min-width: $tablet-width) {
+    padding: 18px 124px 14px;
+    margin: 47px 64px 49px;
+
+    &--success {
+      @include heading-big-font;
+      margin: 44px 91px;
+      padding: 18px 155px 14px;
+    }
   }
 }
 
@@ -53,4 +91,15 @@
   justify-content: center;
   background-color: $color-page-background;
   margin-top: 55px;
+
+  &--success {
+    margin-top: 50px;
+  }
+
+  @media (min-width: $tablet-width) {
+    &--success {
+      @include heading-big-font;
+      margin-top: 52px;
+    }
+  }
 }

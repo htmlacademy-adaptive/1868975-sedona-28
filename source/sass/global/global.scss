@@ -42,3 +42,30 @@ body {
   margin: 0;
   padding: 0;
 }
+
+
+.br {
+  &--mobile {
+    display: block;
+
+    @media (min-width: 767px) {
+      display: none;
+    }
+  }
+
+  &--tablet {
+    display: none;
+
+    @media (min-width: $tablet-width) {
+      display: block;
+    }
+  }
+
+  &--desktop {
+    display: none;
+
+    @media (min-width: $desktop-width) {
+      display: block;
+    }
+  }
+}

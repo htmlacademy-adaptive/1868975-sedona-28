@@ -1,5 +1,3 @@
-@import "../global/variables.scss";
-
 .welcome-section {
   display: flex;
   flex-direction: column;
@@ -10,25 +8,93 @@
   background-size: cover;
   background-color: $color-text;
 
+  @media (min-resolution: 2dppx) {
+    background-image: url("../../img/background-sedona-picture@2x.jpg");
+  }
+
+  @media (min-width: $mobile-width) {
+    padding-top: 90px;
+    padding-bottom: 85px;
+  }
+
+  @media (min-width: $tablet-width) {
+    padding-top: 77px;
+    padding-bottom: 90px;
+  }
+
   &--catalog,
   &--form {
     padding-top: 52px;
     padding-bottom: 67px;
+
+    @media (min-width: $mobile-width) and (max-width: $tablet-width) {
+      background-position: bottom;
+      background-size: 280%;
+    }
+
+    @media (min-width: $tablet-width) {
+      background-position: bottom;
+      background-size: 157%;
+    }
+
+    @media (min-width: $desktop-width) {
+      background-size: 100%;
+      padding-bottom: 78px;
+    }
   }
 }
 
 .welcome-section__logo {
-  margin-top: 90px;
   width: 282px;
+
+  @media (min-width: $tablet-width) {
+    width: 461px;
+    height: 350px;
+  }
 }
 
-.sedona-logo {
-  width: 229px;
+.welcome-section__index-triangle {
+  position: absolute;
+  top: 518px;
+  fill: $color-white;
+
+  &--catalog {
+    fill: $color-black;
+  }
+
+  @media (min-width: $mobile-width) {
+    top: 388px;
+    width: 320px;
+  }
+
+  @media (min-width: $tablet-width) {
+    width: 768px;
+    top: 517px;
+  }
+
+  @media (min-width: $desktop-width) {
+    width: 1200px;
+  }
 }
 
 .welcome-section__catalog-triangle,
 .welcome-section__form-triangle {
   position: absolute;
   fill: $color-white;
-  top: 157px;
+  top: 290px;
+
+  @media (min-width: $mobile-width) {
+    top: 158px;
+    width: 1200px;
+  }
+
+  @media (min-width: $tablet-width) {
+    top: 289px;
+    width: 1200px;
+  }
+
+  @media (min-width: $desktop-width) {
+    top: 301px;
+    width: 1200px;
+  }
 }
