@@ -5,13 +5,6 @@
   z-index: 4;
 }
 
-.main-nav__wrapper {
-  position: absolute;
-  top: 0;
-  right: 0;
-  left: 0;
-}
-
 .main-nav--closed {
   @media (max-width: 767px) {
     display: none;
@@ -22,8 +15,18 @@
   display: block;
 }
 
-.main-nav--nojs .main-nav__toggle {
-  display: none;
+.main-nav__wrapper {
+  position: absolute;
+  top: 0;
+  right: 0;
+  left: 0;
+}
+
+.main-nav--nojs {
+  position: static;
+  top: 0;
+  right: 0;
+  left: 0;
 }
 
 .main-nav__toggle {

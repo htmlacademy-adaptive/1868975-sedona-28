@@ -1,3 +1,7 @@
+.description {
+  position: relative;
+}
+
 .description__title {
   @include heading-font;
   color: $color-black;
@@ -34,7 +38,7 @@
 
 .description__triangle {
   position: absolute;
-  top: 650px;
+  top: 171px;
   width: 320px;
   fill: $color-white;
 
