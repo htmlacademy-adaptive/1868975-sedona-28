@@ -1,4 +1,5 @@
 .welcome-section {
+  position: relative;
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -63,13 +64,13 @@
   }
 
   @media (min-width: $mobile-width) {
-    top: 388px;
+    top: 332px;
     width: 320px;
   }
 
   @media (min-width: $tablet-width) {
     width: 768px;
-    top: 517px;
+    top: 461px;
   }
 
   @media (min-width: $desktop-width) {
@@ -81,20 +82,19 @@
 .welcome-section__form-triangle {
   position: absolute;
   fill: $color-white;
-  top: 290px;
 
   @media (min-width: $mobile-width) {
-    top: 158px;
+    top: 101px;
     width: 1200px;
   }
 
   @media (min-width: $tablet-width) {
-    top: 289px;
+    top: 233px;
     width: 1200px;
   }
 
   @media (min-width: $desktop-width) {
-    top: 301px;
+    top: 245px;
     width: 1200px;
   }
 }
