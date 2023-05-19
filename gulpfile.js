@@ -48,6 +48,7 @@ const copyHtml = () => {
 const scripts = () => {
   return gulp.src('source/js/*.js')
   .pipe(terser())
+  .pipe(rename('script.min.js'))
   .pipe(gulp.dest('build/js'))
   .pipe(browser.stream());
 }
