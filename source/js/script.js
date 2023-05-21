@@ -1,4 +1,4 @@
-let navMain = document.querySelector('.main-nav__wrapper');
+let navMain = document.querySelector('.main-nav__menu');
 let navToggle = document.querySelector('.main-nav__toggle');
 let navClosetoggle = document.querySelector('.main-nav__close-toggle');
 
