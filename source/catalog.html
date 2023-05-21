@@ -4,12 +4,13 @@
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>HTML Academy: Седона | Фото и видео</title>
+    <link rel="preload" href="fonts/ptsans.woff2" type="font/woff2" as="font" crossorigin="anonymous">
+    <link rel="preload" href="fonts/ptsansbold.woff2" type="font/woff2" as="font" crossorigin="anonymous">
     <link rel="stylesheet" href="css/style.min.css">
-    <link rel="icon" href="./favicon.ico">
+    <link rel="icon" href="favicon.ico"> <!-- 32×32 -->
     <link rel="icon" href="img/favicons/favicon.svg" type="image/svg+xml">
-    <link rel="apple-touch-icon" href="img/favicons/apple-icon-180x180.png">
-    <link rel="manifest" href="./manifest.webmanifest">
-  </head>
+    <link rel="apple-touch-icon" href="img/favicons/favicon-180.png"> <!-- 180×180 -->
+    <link rel="manifest" href="manifest.webmanifest">
   </head>
   <body class="page__body">
     <div class="page__wrapper">
@@ -22,7 +23,7 @@
           <button class="main-nav__toggle" type="button">
             <span class="visually-hidden">Открыть меню</span>
           </button>
-          <div class="main-nav__wrapper main-nav--closed main-nav--nojs">
+          <div class="main-nav__menu main-nav--closed main-nav--nojs">
             <ul class="main-nav__list list">
               <li class="main-nav__item main-nav__item--index">
                 <a class="main-nav__link" href="index.html">Главная</a>
@@ -93,11 +94,11 @@
             <li class="gallery__item gallery-card">
               <a href="#">
                 <picture>
-                  <source media="(min-width: 1200px)" srcset="img/rastitelnost-photo-desktop.webp 1x, img/rastitelnost-photo-desktop@2x.webp 2x">
-                  <source media="(min-width: 768px)" srcset="img/rastitelnost-photo-tablet.webp 1x, img/rastitelnost-photo-tablet@2x.webp 2x">
-                  <source type="image/webp" srcset="img/rastitelnost-photo.webp 1x, img/rastitelnost-photo@2x.webp 2x">
-                  <source media="(min-width: 1200px)" srcset="img/rastitelnost-photo-desktop.jpg 1x, img/rastitelnost-photo-desktop@2x.jpg 2x">
-                  <source media="(min-width: 768px)" srcset="img/rastitelnost-photo-tablet.jpg 1x, img/rastitelnost-photo-tablet@2x.jpg 2x">
+                  <source media="(min-width: 1200px)" srcset="img/rastitelnost-photo-desktop.webp 1x, img/rastitelnost-photo-desktop@2x.webp 2x" type="image/webp">
+                  <source media="(min-width: 768px)" srcset="img/rastitelnost-photo-tablet.webp 1x, img/rastitelnost-photo-tablet@2x.webp 2x" type="image/webp">
+                  <source srcset="img/rastitelnost-photo.webp 1x, img/rastitelnost-photo@2x.webp 2x" type="image/webp">
+                  <source media="(min-width: 1200px)" srcset="img/rastitelnost-photo-desktop.jpg 1x, img/rastitelnost-photo-desktop@2x.jpg 2x" type="image/jpg">
+                  <source media="(min-width: 768px)" srcset="img/rastitelnost-photo-tablet.jpg 1x, img/rastitelnost-photo-tablet@2x.jpg 2x" type="image/jpg">
                   <img src="img/rastitelnost-photo.jpg" srcset="img/rastitelnost-photo@2x 2x" alt="Неродные просторы.">
                 </picture>
               </a>
@@ -120,11 +121,11 @@
             <li class="gallery__item gallery-card">
               <a href="#">
                 <picture>
-                  <source media="(min-width: 1200px)" srcset="img/north-road-photo-desktop.webp 1x, img/north-road-photo-desktop@2x.webp 2x">
-                  <source media="(min-width: 768px)" srcset="img/north-road-photo-tablet.webp 1x, img/north-road-photo-tablet@2x.webp 2x">
-                  <source type="image/webp" srcset="img/north-road-photo.webp 1x, img/north-road-photo@2x.webp 2x">
-                  <source media="(min-width: 1200px)" srcset="img/north-road-photo-desktop.jpg 1x, img/north-road-photo-desktop@2x.jpg 2x">
-                  <source media="(min-width: 768px)" srcset="img/north-road-photo-tablet.jpg 1x, img/north-road-photo-tablet@2x.jpg 2x">
+                  <source media="(min-width: 1200px)" srcset="img/north-road-photo-desktop.webp 1x, img/north-road-photo-desktop@2x.webp 2x" type="image/webp">
+                  <source media="(min-width: 768px)" srcset="img/north-road-photo-tablet.webp 1x, img/north-road-photo-tablet@2x.webp 2x" type="image/webp">
+                  <source srcset="img/north-road-photo.webp 1x, img/north-road-photo@2x.webp 2x" type="image/webp">
+                  <source media="(min-width: 1200px)" srcset="img/north-road-photo-desktop.jpg 1x, img/north-road-photo-desktop@2x.jpg 2x" type="image/jpg">
+                  <source media="(min-width: 768px)" srcset="img/north-road-photo-tablet.jpg 1x, img/north-road-photo-tablet@2x.jpg 2x" type="image/jpg">
                   <img src="img/north-road-photo.jpg" srcset="img/north-road-photo@2x 2x" alt="Неродные просторы.">
                 </picture>
               </a>
@@ -148,11 +149,11 @@
             <li class="gallery__item gallery-card">
               <a href="#">
                 <picture>
-                  <source media="(min-width: 1200px)" srcset="img/sedona-bridge-gallery-desktop.webp 1x, img/sedona-bridge-gallery-desktop@2x.webp 2x">
-                  <source media="(min-width: 768px)" srcset="img/sedona-bridge-gallery-tablet.webp 1x, img/sedona-bridge-gallery-tablet@2x.webp 2x">
-                  <source type="image/webp" srcset="img/sedona-bridge-gallery.webp 1x, img/sedona-bridge-gallery@2x.webp 2x">
-                  <source media="(min-width: 1200px)" srcset="img/sedona-bridge-gallery-desktop.jpg 1x, img/sedona-bridge-gallery-desktop@2x.jpg 2x">
-                  <source media="(min-width: 768px)" srcset="img/sedona-bridge-gallery-tablet.jpg 1x, img/sedona-bridge-gallery-tablet@2x.jpg 2x">
+                  <source media="(min-width: 1200px)" srcset="img/sedona-bridge-gallery-desktop.webp 1x, img/sedona-bridge-gallery-desktop@2x.webp 2x" type="image/webp">
+                  <source media="(min-width: 768px)" srcset="img/sedona-bridge-gallery-tablet.webp 1x, img/sedona-bridge-gallery-tablet@2x.webp 2x" type="image/webp">
+                  <source srcset="img/sedona-bridge-gallery.webp 1x, img/sedona-bridge-gallery@2x.webp 2x" type="image/webp">
+                  <source media="(min-width: 1200px)" srcset="img/sedona-bridge-gallery-desktop.jpg 1x, img/sedona-bridge-gallery-desktop@2x.jpg 2x" type="image/jpg">
+                  <source media="(min-width: 768px)" srcset="img/sedona-bridge-gallery-tablet.jpg 1x, img/sedona-bridge-gallery-tablet@2x.jpg 2x" type="image/jpg">
                   <img src="img/sedona-bridge-gallery.jpg" srcset="img/sedona-bridge-gallery@2x 2x" alt="Неродные просторы.">
                 </picture>
               </a>
@@ -183,7 +184,7 @@
 
           <div class="video__player">
             <picture>
-              <source type="image/webp" srcset="img/video-desktop.webp 1x, img/video-desktop@2x.webp 2x">
+              <source srcset="img/video-desktop.webp 1x, img/video-desktop@2x.webp 2x" type="image/webp">
               <img class="video__player-splash-screen" width="280" height="177" src="img/video-desktop.jpg" srcset="img/video-desktop@2x 2x" alt="Видеопрезентация туристического города Седона.">
             </picture>
           </div>
