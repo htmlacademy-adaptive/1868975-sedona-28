@@ -17,6 +17,7 @@
 
 .hotel-search__text {
   @include basic-font;
+  color: $color-text;
   text-align: center;
   margin: 0 auto;
   padding-bottom: 32px;
