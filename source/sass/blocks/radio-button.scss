@@ -42,3 +42,8 @@
   padding-left: 62px;
   display: block;
 }
+
+.radio-button:focus-within {
+  outline: auto;
+  outline-offset: 12px;
+}

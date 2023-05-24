@@ -150,3 +150,9 @@
     }
   }
 }
+
+.gallery-card__content {
+  @media (min-width: $desktop-width) {
+    max-width: 300px;
+  }
+}
