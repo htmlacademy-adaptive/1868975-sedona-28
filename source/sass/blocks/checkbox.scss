@@ -40,3 +40,8 @@
   padding-left: 62px;
   display: block;
 }
+
+.checkbox:focus-within {
+  outline: auto;
+  outline-offset: 12px;
+}

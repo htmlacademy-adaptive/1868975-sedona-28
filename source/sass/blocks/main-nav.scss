@@ -5,13 +5,13 @@
   z-index: 4;
 }
 
-.main-nav--closed {
+.main-nav__menu--closed {
   @media (max-width: 767px) {
     display: none;
   }
 }
 
-.main-nav--opened {
+.main-nav__menu--opened {
   display: block;
 }
 
@@ -22,7 +22,7 @@
   left: 0;
 }
 
-.main-nav--nojs {
+.main-nav__menu--nojs {
   position: static;
   display: block;
   top: 0;
